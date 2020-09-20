@@ -1,6 +1,7 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import "./index.css"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import Popular from './components/Popular'
 
 // Component
 // State
@@ -9,11 +10,15 @@ import "./index.css"
 
 class App extends React.Component {
   render() {
-    return <div>Hello Sally!</div>
+    return (
+      <div className='container'>
+        <Popular />
+      </div>
+    )
   }
 }
 
 ReactDOM.render(
   <App />, // React Element
-  document.getElementById("app") // Where to render the Element to
+  document.getElementById('app') // Where to render the Element to
 )
